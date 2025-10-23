@@ -102,7 +102,7 @@ services:
     env_file:
       - ./hadoop.env
   pyspark:
-    image: jupyter/pyspark-notebook
+    build: ./pyspark-notebook
     container_name: pyspark-notebook
     ports:
       - "8888:8888"            
